@@ -182,9 +182,9 @@ p { margin: 0; }
 .hero {
   position: relative;
   background: linear-gradient(175deg, var(--purple-deep) 0%, var(--brown-deep) 130%);
-  padding: 120px 0;
+  padding: clamp(72px, 14vw, 120px) 0;
   overflow: hidden;
-  min-height: 640px;
+  min-height: clamp(480px, 90vh, 640px);
   display: flex;
   align-items: center;
 }
@@ -256,7 +256,7 @@ p { margin: 0; }
 .offerings {
   position: relative;
   background: var(--bg-cream);
-  padding: 100px 32px;
+  padding: clamp(56px, 10vw, 100px) 32px;
   overflow: hidden;
 }
 .offerings__watermark {
@@ -335,7 +335,7 @@ p { margin: 0; }
 /* ===== About ===== */
 .about {
   background: var(--white);
-  padding: 100px 32px;
+  padding: clamp(56px, 10vw, 100px) 32px;
 }
 .about__content {
   max-width: var(--max-w);
@@ -373,7 +373,7 @@ p { margin: 0; }
 .statement {
   position: relative;
   background: linear-gradient(115deg, var(--brown-deep) 0%, var(--purple-deep) 100%);
-  padding: 120px 32px;
+  padding: clamp(64px, 12vw, 120px) 32px;
   text-align: center;
   overflow: hidden;
 }
@@ -402,7 +402,7 @@ p { margin: 0; }
 /* ===== Contact ===== */
 .contact {
   background: var(--bg-cream);
-  padding: 100px 32px;
+  padding: clamp(56px, 10vw, 100px) 32px;
 }
 .contact__pills {
   max-width: var(--max-w);
@@ -420,7 +420,6 @@ p { margin: 0; }
   border-radius: var(--radius-pill);
   padding: 10px;
   transition: box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-  transition: box-shadow 0.15s;
 }
 .pill:hover {
   box-shadow: 0 12px 28px -10px rgba(50,40,40,0.18);
@@ -443,7 +442,7 @@ p { margin: 0; }
 .footer {
   background: linear-gradient(115deg, var(--brown-deep) 0%, var(--purple-deep) 100%);
   color: var(--white);
-  padding: 56px 32px 32px;
+  padding: clamp(40px, 8vw, 56px) 32px 32px;
 }
 .footer__top {
   max-width: var(--max-w);
@@ -515,10 +514,10 @@ p { margin: 0; }
 }
 
 @media (max-width: 520px) {
-  .hero { padding: 80px 0; }
   .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
+  .nav__mobile { padding-left: 20px; padding-right: 20px; }
   .card { padding: 32px; }
   .pill { flex: 1 1 100%; }
 }
