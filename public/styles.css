@@ -243,7 +243,6 @@ p { margin: 0; }
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
-  filter: blur(10px);
 }
 .hero__container {
   position: relative;
@@ -428,7 +427,6 @@ p { margin: 0; }
   height: 100%;
   object-fit: cover;
   opacity: 0.1;
-  filter: blur(8px);
   pointer-events: none;
 }
 .statement p {
