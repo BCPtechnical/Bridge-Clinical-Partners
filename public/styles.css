@@ -242,7 +242,6 @@ p { margin: 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
 }
 .hero__container {
   position: relative;
@@ -426,7 +425,6 @@ p { margin: 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.1;
   pointer-events: none;
 }
 .statement p {
