@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridge Clinical Partners | Physician-Owned MSO</title>
+  <meta name="description" content="Bridge Clinical Partners is a physician-led Management Services Organization (MSO) providing enterprise-level operational support so you can stay independent.">
+
+  <!-- Security headers: additionally set these at the server/CDN level (see README) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo" aria-label="Bridge Clinical Partners home">
+        <img class="logo__mark" src="assets/logo-nav.svg" width="112" height="40" alt="Bridge Clinical Partners logo">
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#top">Home</a>
+        <a href="#offerings">Offering</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact us</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--outline btn--nav">Protect Your Practice</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#top">Home</a>
+      <a href="#offerings">Offering</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact us</a>
+      <a href="#contact" class="btn btn--outline">Protect Your Practice</a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/hero-bg.png" alt="" loading="eager">
+    </div>
+    <div class="hero__inner">
+      <h1>100% Physician-Owned.<br>Zero Private Equity.</h1>
+      <p class="hero__sub">Retain your independence and restore your clinical autonomy. Bridge Clinical Partners is a physician-led Management Services Organization (MSO) that provides the enterprise-level operational support you need to thrive&mdash;without forcing you to sell out to corporate interests.</p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Protect Your Practice</a>
+        <a href="#about" class="btn btn--outline">Our Physician-Led Model</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Offerings ===== -->
+  <section class="offerings" id="offerings">
+    <img class="offerings__watermark" src="assets/offerings-bg.png" alt="" aria-hidden="true">
+
+
+    <div class="section-intro">
+      <p class="eyebrow">Our Offerings</p>
+      <h2>The Infrastructure to Stay Independent</h2>
+      <p class="section-intro__body">You don't have to sell your practice to survive the administrative burdens of modern medicine. We provide the comprehensive, end-to-end management solutions you need to scale profitably, while you maintain 100% control over patient care.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M12 2 L20 5 V11 C20 16 16.5 20.5 12 22 C7.5 20.5 4 16 4 11 V5 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Practice Preservation &amp; Independence</h3>
+        <p>Stay at the helm. We provide the operational scale and leverage of a corporate entity, but our only shareholders are the physicians we serve. We handle the business; you keep your autonomy.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12M12 12L5 16.5M12 12L19 16.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Operations &amp; Workflow Optimization</h3>
+        <p>Eliminate bottlenecks. We optimize your front-desk protocols, patient scheduling, and daily workflows to enhance efficiency and the patient experience.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Technology &amp; EHR Support</h3>
+        <p>Keep your practice secure and connected. We offer IT infrastructure management, EHR optimization, and data security compliance.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M6 4 L11 9 L4 16 L2 14 L9 7 M13 6 L19 12 L16 15 L10 9 M17 16 L21 20 L19 22 L15 18" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Regulatory Compliance &amp; Credentialing</h3>
+        <p>Navigate healthcare regulations with confidence. We manage provider credentialing, HIPAA compliance, and risk management protocols.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h20M7 15h4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Revenue Cycle Management (RCM)</h3>
+        <p>Maximize your collections and minimize denials. We handle everything from coding compliance to billing and aggressive accounts receivable follow-up.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.5c2.7 0 5 2.1 5 5.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Human Resources &amp; Staffing</h3>
+        <p>Build a reliable, high-performing team. We manage recruiting, onboarding, payroll, benefits administration, and staff training.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== About Us ===== -->
+  <section class="about" id="about">
+    <div class="section-intro section-intro--about">
+      <p class="eyebrow">About Us</p>
+      <h2>Built by Physicians.<br>Answering Only to Physicians.</h2>
+    </div>
+
+    <div class="about__content">
+      <div class="about__copy">
+        <p class="about__lead">Bridge Clinical Partners was founded on a simple, uncompromising principle:</p>
+        <p class="about__body">
+          <span class="about__highlight">Healthcare should be led by doctors, not private equity firms.</span><br><br>
+          As a practicing physician, our founder built this Management Services Organization to run his own clinical entity. We needed a way to eliminate administrative burnout and scale operations&mdash;all without sacrificing our independence to outside investors.<br><br>
+          We successfully built that infrastructure, and now we are offering it to you. We understand the daily realities of patient care and the pressures pushing private practices toward corporate consolidation. Our mission is to provide you with the robust business support you need to remain independent, profitable, and in control of your clinical decisions.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/about-photo.png" alt="Physician consulting with a patient in a modern clinical office" loading="lazy" width="593" height="593">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Impactful statement ===== -->
+  <section class="statement">
+    <img class="statement__bg" src="assets/statement-bg.png" alt="" loading="lazy">
+    <p>We answer to you, and <span>you answer to your patients.</span></p>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="section-intro section-intro--contact">
+      <p class="eyebrow">Contact Us</p>
+      <h2>Let&rsquo;s work together.</h2>
+      <p class="section-intro__body">When you feel ready to part with some (or all) the administrative responsibilities of being a doctor, reach out to our leadership team for a confidential consultation.</p>
+    </div>
+
+    <div class="contact__pills">
+      <a class="pill" href="mailto:info@bridgeclinicalpartners.com">
+        <span class="pill__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </span>
+        info@bridgeclinicalpartners.com
+      </a>
+      <a class="pill" href="tel:">
+        <span class="pill__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 3h4l2 5-3 2c1 2.5 2.5 4 5 5l2-3 5 2v4c0 1-1 2-2 2C10 20 4 14 4 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </span>
+        (XXX) XXX-XXXX
+      </a>
+      <a class="pill" href="#">
+        <span class="pill__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </span>
+        City, State
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="logo logo--footer" aria-label="Bridge Clinical Partners home">
+        <img class="logo__mark" src="assets/logo-footer.svg" width="202" height="72" alt="Bridge Clinical Partners logo">
+      </a>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <p class="footer__heading">Home</p>
+          <p><a href="#offerings">Services</a></p>
+          <p><a href="#about">About Us</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Legal</p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Terms of Service</a></p>
+          <p><a href="#">HIPAA Disclaimer</a></p>
+        </div>
+      </div>
+
+      <div class="footer__social">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter / X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__divider" role="separator"></div>
+    <p class="footer__copyright">&copy; 2026 Bridge Clinical Partners. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
