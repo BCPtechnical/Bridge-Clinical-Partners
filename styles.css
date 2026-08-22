@@ -206,7 +206,7 @@ p { margin: 0; }
   max-width: var(--max-w);
   margin: 0 auto;
   width: 100%;
-  padding: 0 32px;
+  padding: 0 48px;
   display: flex;
 }
 .hero__inner {
@@ -516,7 +516,7 @@ p { margin: 0; }
 
 @media (max-width: 520px) {
   .hero { padding: 80px 0; }
-  .hero__container { padding: 0 20px; }
+  .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
   .card { padding: 32px; }
