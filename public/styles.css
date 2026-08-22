@@ -548,12 +548,17 @@ p { margin: 0; }
   .about__content { grid-template-columns: 1fr; }
   .about__image { order: -1; }
 
-  .footer__top { gap: 40px; }
+  .footer__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
   .footer__links { gap: 40px; }
   .footer__social { margin-left: 0; }
 }
 
 @media (max-width: 520px) {
+  .footer__links { flex-direction: column; gap: 24px; }
   .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
