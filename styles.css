@@ -182,13 +182,16 @@ p { margin: 0; }
   opacity: 0.3;
   filter: blur(10px);
 }
-.hero__inner {
+.hero__container {
   position: relative;
   max-width: var(--max-w);
   margin: 0 auto;
   width: 100%;
+  display: flex;
+}
+.hero__inner {
   color: var(--white);
-  max-width: 720px;
+  max-width: 640px;
 }
 .hero h1 {
   color: var(--white);
