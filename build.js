@@ -24,6 +24,13 @@ const SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN;
 const ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT || 'master';
 
+// Used for canonical URL and Open Graph/Twitter Card absolute image URLs.
+// Set the SITE_URL repo secret once the custom domain (Porkbun) is live —
+// until then this defaults to the current GitHub Pages URL. No trailing slash.
+const SITE_URL = (process.env.SITE_URL || 'https://oh-zephyr.github.io/Bridge-Clinical-Partners').replace(/\/$/, '');
+const OG_IMAGE_WIDTH = 131;
+const OG_IMAGE_HEIGHT = 131;
+
 // ---------------------------------------------------------------------------
 // Known-good fallback content — exactly what's on the site today. This is
 // what ships if Contentful isn't configured yet, or a fetch fails.
@@ -260,6 +267,11 @@ function renderTemplate(template, content) {
     'contact.mapUrl': mapUrlFor(content.contact.address),
     'contact.facebookUrl': content.contact.facebookUrl,
     'contact.twitterUrl': content.contact.twitterUrl,
+
+    'site.url': SITE_URL,
+    'site.ogImage': `${SITE_URL}/assets/favicon.png`,
+    'site.ogImageWidth': String(OG_IMAGE_WIDTH),
+    'site.ogImageHeight': String(OG_IMAGE_HEIGHT),
   };
 
   for (const [token, value] of Object.entries(replacements)) {

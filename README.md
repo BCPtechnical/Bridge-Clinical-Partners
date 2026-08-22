@@ -88,6 +88,12 @@ secret**, add:
 - `CONTENTFUL_SPACE_ID`
 - `CONTENTFUL_ACCESS_TOKEN` — a **Content Delivery API** token (read-only),
   from Contentful: Settings → API keys.
+- `SITE_URL` *(optional)* — the site's canonical URL, no trailing slash,
+  e.g. `https://bridgeclinicalpartners.com`. Used for the canonical link tag
+  and Open Graph/Twitter Card image URLs. Defaults to the current GitHub
+  Pages URL if unset — **update this once the custom domain (step 4) is
+  live**, otherwise social share previews will still point at the
+  `github.io` address.
 
 ### 3. GitHub Pages
 
@@ -122,6 +128,16 @@ Ships as fallback content until Contentful entries are filled in:
 - **Phone number** — `(XXX) XXX-XXXX`
 - **Address** — `City, State`
 - **Social links** — Facebook and X icons point to `#`
+
+## Metadata
+
+Favicon and social-share preview both use the brand logomark
+(`public/assets/favicon.svg` / `.png`, 131×131). This works for the
+"summary" Twitter/link-preview card format, but it's not the ideal
+1200×630 image most platforms prefer for the larger rich-preview card — if
+you want that fuller format later, send over (or have designed) a proper
+1200×630 branded share graphic and I'll wire it in as `og:image` with
+`twitter:card` switched to `summary_large_image`.
 
 ## Security recommendations (set at your host/CDN, not in the HTML)
 
