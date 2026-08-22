@@ -163,7 +163,7 @@ p { margin: 0; }
 .hero {
   position: relative;
   background: linear-gradient(175deg, var(--purple-deep) 0%, var(--brown-deep) 130%);
-  padding: 120px 32px;
+  padding: 120px 0;
   overflow: hidden;
   min-height: 640px;
   display: flex;
@@ -187,6 +187,7 @@ p { margin: 0; }
   max-width: var(--max-w);
   margin: 0 auto;
   width: 100%;
+  padding: 0 32px;
   display: flex;
 }
 .hero__inner {
@@ -470,7 +471,8 @@ p { margin: 0; }
 }
 
 @media (max-width: 520px) {
-  .hero { padding: 80px 20px; }
+  .hero { padding: 80px 0; }
+  .hero__container { padding: 0 20px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
   .card { padding: 32px; }
