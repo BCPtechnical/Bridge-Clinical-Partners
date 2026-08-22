@@ -3,6 +3,49 @@
    Static, dependency-free HTML/CSS/JS build
    ============================================ */
 
+@font-face {
+  font-family: 'Oceanic Text';
+  src: url('assets/fonts/oceanic-text-book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oceanic Text';
+  src: url('assets/fonts/oceanic-text-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oceanic Text';
+  src: url('assets/fonts/oceanic-text-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oceanic Grotesk';
+  src: url('assets/fonts/oceanic-grotesk-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oceanic Grotesk';
+  src: url('assets/fonts/oceanic-grotesk-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oceanic Grotesk';
+  src: url('assets/fonts/oceanic-grotesk-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --purple-deep: #594678;
   --brown-deep: #322828;
@@ -14,8 +57,8 @@
   --white: #ffffff;
   --muted: #bcb7ad;
 
-  --font-display: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Oceanic Text', 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Oceanic Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --max-w: 1280px;
   --radius-lg: 24px;
@@ -56,6 +99,7 @@ p { margin: 0; }
 }
 
 .btn {
+  font-family: var(--font-display);
   display: inline-flex;
   align-items: center;
   justify-content: center;
