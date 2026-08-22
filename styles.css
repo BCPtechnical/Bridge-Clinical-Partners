@@ -191,6 +191,7 @@ p { margin: 0; }
   max-width: 720px;
 }
 .hero h1 {
+  color: var(--white);
   font-size: clamp(36px, 5vw, 64px);
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -226,7 +227,7 @@ p { margin: 0; }
   color: var(--ink);
 }
 .section-intro--about { margin-bottom: 56px; }
-.section-intro--contact { text-align: left; margin: 0 0 40px; max-width: 900px; }
+.section-intro--contact { text-align: center; margin: 0 auto 40px; max-width: 900px; }
 
 /* ===== Offerings ===== */
 .offerings {
