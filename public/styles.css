@@ -550,16 +550,15 @@ p { margin: 0; }
 
   .footer__top {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 32px;
   }
-  .footer__links { justify-content: center; gap: 40px; }
+  .footer__links { justify-content: flex-start; gap: 48px; }
   .footer__social { margin-left: 0; }
 }
 
 @media (max-width: 520px) {
-  .footer__links { flex-direction: column; align-items: center; gap: 24px; }
   .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
