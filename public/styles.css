@@ -486,16 +486,17 @@ p { margin: 0; }
 }
 .footer__top {
   max-width: var(--max-w);
-  margin: 0 auto 48px;
+  margin: 0 auto 40px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  gap: 32px;
+  text-align: center;
 }
 .footer__links {
   display: flex;
+  justify-content: center;
   gap: 80px;
-  flex: 1;
   flex-wrap: wrap;
 }
 .footer__heading { font-size: 18px; font-weight: 600; margin-bottom: 18px; }
@@ -505,7 +506,6 @@ p { margin: 0; }
 .footer__social {
   display: flex;
   gap: 16px;
-  margin-left: auto;
 }
 .social-icon {
   width: 44px;
@@ -547,18 +547,10 @@ p { margin: 0; }
   .cards { grid-template-columns: 1fr; }
   .about__content { grid-template-columns: 1fr; }
   .about__image { order: -1; }
-
-  .footer__top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-  }
-  .footer__links { gap: 40px; }
-  .footer__social { margin-left: 0; }
 }
 
 @media (max-width: 520px) {
-  .footer__links { flex-direction: column; gap: 24px; }
+  .footer__links { flex-direction: column; align-items: center; gap: 24px; }
   .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
