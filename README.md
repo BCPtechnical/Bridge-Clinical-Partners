@@ -112,6 +112,37 @@ At Porkbun, add these DNS records:
 
 Once DNS propagates, check **"Enforce HTTPS"** in the same Pages settings.
 
+### 5. Let Contentful trigger a rebuild automatically
+
+Important: this is a **build-time** integration (see top of this file) —
+publishing an edit in Contentful does not update the live site by itself.
+Something has to re-run the build. Two ways to do that:
+
+**A. Manual** — repo → **Actions** tab → "Build and deploy to GitHub Pages"
+→ **Run workflow**. Always available, no setup needed, good enough if edits
+are infrequent.
+
+**B. Automatic (recommended for a client who'll edit regularly)** — a
+Contentful webhook calls GitHub's API on every publish, kicking off the same
+workflow with no manual step:
+
+1. Generate a **separate** fine-grained GitHub token just for this (Settings
+   → Developer settings → Personal access tokens): repository access limited
+   to this repo, permission **Contents: Read and write**. Keep this separate
+   from any token used for pushing code — it only ever needs to trigger
+   builds.
+2. In Contentful: **Settings → Webhooks → Add webhook**
+   - URL: `https://api.github.com/repos/Oh-Zephyr/Bridge-Clinical-Partners/dispatches`
+   - Method: `POST`
+   - Headers: `Authorization: Bearer <the token from step 1>`,
+     `Accept: application/vnd.github+json`
+   - Content type: `application/json`
+   - Custom payload: `{"event_type": "contentful-publish"}`
+   - Triggers: at minimum **Entry: Publish** and **Entry: Unpublish**;
+     add **Asset: Publish** too if photos will be swapped via Contentful.
+3. Save. From then on, publishing in Contentful triggers a rebuild within
+   the same few minutes as pushing code would.
+
 ## Local preview
 
 ```
