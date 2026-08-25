@@ -544,6 +544,7 @@ p { margin: 0; }
   .nav__toggle { display: flex; }
   .nav__mobile.is-open { display: flex; }
 
+  .hero h1 { font-size: clamp(28px, 6vw, 37px); }
   .cards { grid-template-columns: 1fr; }
   .about__content { grid-template-columns: 1fr; }
   .about__image { order: -1; }
@@ -559,6 +560,7 @@ p { margin: 0; }
 }
 
 @media (max-width: 520px) {
+  .hero h1 { font-size: 28px; }
   .hero__container { padding: 0 28px; }
   .offerings, .about, .contact, .statement, .footer { padding-left: 20px; padding-right: 20px; }
   .nav__inner { padding: 14px 20px; }
