@@ -254,7 +254,6 @@ p { margin: 0; }
 }
 .hero__inner {
   color: var(--white);
-  max-width: 640px;
 }
 .hero h1 {
   color: var(--white);
