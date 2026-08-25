@@ -67,7 +67,7 @@ const DEFAULT_CONTENT = {
     photo: 'assets/about-photo.png',
   },
   statement: {
-    mainText: 'We answer to you, and ',
+    mainText: 'We answer to you, and',
     highlightText: 'you answer to your patients.',
     backgroundImage: 'assets/statement-bg.png',
   },
@@ -253,7 +253,7 @@ function renderTemplate(template, content) {
     'about.bodyText': paragraphize(content.about.bodyText),
     'about.photo': content.about.photo,
 
-    'statement.mainText': escapeHtml(content.statement.mainText),
+    'statement.mainText': escapeHtml(content.statement.mainText.trimEnd()),
     'statement.highlightText': escapeHtml(content.statement.highlightText),
     'statement.backgroundImage': content.statement.backgroundImage,
 
